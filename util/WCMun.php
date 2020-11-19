@@ -21,11 +21,9 @@ class WCMun
         $divsGeral = $this->capturarTagsDivGeral();
         $divsInternas = $this->capturarDivsInternasMainContent($divsGeral);
         $divNoticia = $this->capturarNoticia($divsInternas);
-        $detalhes = $this->titleDetail($divNoticia);    
-        $imagens = $this->FunilDetlImg($divNoticia);
-        $imagem = $this->PegarImgs($imagens);
-          
+        $detalhes = $this->titleDetail($divNoticia);            
         $noticia = $this->titleCap($detalhes);
+        
         return $noticia;
     }
 
