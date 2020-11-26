@@ -32,7 +32,9 @@ CREATE TABLE `tbl_noticia` (
   `id_noticia` int(11) NOT NULL,
   `titulo` varchar(200) NOT NULL,
   `imagem` varchar(200) NOT NULL,
-  `links` varchar(200) NOT NULL
+  `links` varchar(200) NOT NULL,
+  `data_noticia` timestamp NOT NULL DEFAULT current_timestamp()
+
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

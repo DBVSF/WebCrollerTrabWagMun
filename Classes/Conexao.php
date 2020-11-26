@@ -2,6 +2,7 @@
  class Conexao 
  {
     public static $con;
+    
     public function __construct() 
     {
         $this->conecta();
