@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24-Nov-2020 às 12:30
+-- Tempo de geração: 26-Nov-2020 às 12:45
 -- Versão do servidor: 10.4.6-MariaDB
 -- versão do PHP: 7.3.9
 
@@ -31,47 +31,26 @@ SET time_zone = "+00:00";
 CREATE TABLE `tbl_noticia` (
   `id_noticia` int(11) NOT NULL,
   `titulo` varchar(200) NOT NULL,
-  `imagem` varchar(200) NOT NULL,
+  `imagem` varchar(500) NOT NULL,
   `links` varchar(200) NOT NULL,
   `data_noticia` timestamp NOT NULL DEFAULT current_timestamp()
-
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `tbl_noticia`
 --
 
-INSERT INTO `tbl_noticia` (`id_noticia`, `titulo`, `imagem`, `links`) VALUES
-(11, 'Mulher e criança de 11 anos ficam feridas em colisão entre carro e moto...', 'https://omunicipio.com.br/wp-content/uploads/2020/11/ambulancia-11-218x150.jpg', 'https://omunicipio.com.br/mulher-e-crianca-de-11-anos-ficam-feridos-em-colisao-entre-carro-e-moto-no-limeira-baixa/'),
-(12, 'Barateiro Havan anuncia renovação da técnica Rafaela Nicolete para 2021', 'https://omunicipio.com.br/wp-content/uploads/2020/11/barateiro-havan-anuncia-renovacao-da-tecnica-rafaela-nicolete-para-2021-whatsapp-image-2020-11-23-at-19.12.22-218x150.jpeg', 'https://omunicipio.com.br/barateiro-havan-anuncia-renovacao-da-tecnica-rafaela-nicolete-para-2021/'),
-(13, 'Covid-19: Guabiruba registra 13 novos casos; cidade tem 169 casos ativos da doença', 'https://omunicipio.com.br/wp-content/uploads/2020/11/covid-19-com-alta-do-numero-de-casos-prefeitura-de-guabiruba-alerta-para-cuidados-img-0775-1-218x150.jpg', 'https://omunicipio.com.br/covid-19-guabiruba-registra-13-novos-casos-cidade-tem-169-casos-ativos-da-doenca/'),
-(14, 'Postos de gasolina promovem arrecadação de brinquedos com sorteios de 100 litros de combustível...', 'https://omunicipio.com.br/wp-content/uploads/2020/11/postos-de-gasolina-promovem-campanha-de-natal-com-sorteio-de-300-litros-de-combustivel-em-brusque-child-1864718-1280-1-218x150.jpg', 'https://omunicipio.com.br/postos-de-gasolina-promovem-campanha-de-natal-com-sorteios-de-100-litros-de-combustivel-em-brusque/'),
-(15, 'Com alvos de Brusque, PF faz maior operação do ano contra lavagem de dinheiro...', 'https://omunicipio.com.br/wp-content/uploads/2020/11/pf-enterprise-218x150.jpeg', 'https://omunicipio.com.br/com-alvos-de-brusque-pf-faz-maior-operacao-do-ano-contra-lavagem-de-dinheiro-do-trafico/'),
-(16, 'GALERIA: Conheça o bairro menos quente de Guabiruba', 'https://omunicipio.com.br/wp-content/uploads/2020/11/ciro-groh-galeria-conheca-um-dos-bairros-mais-frios-de-guabiruba-guabiruba-capa-218x150.jpg', 'https://omunicipio.com.br/ciro-groh-bairro-menos-quente/'),
-(17, 'Brusque registra 73 novos casos da Covid-19; são 729 pessoas com o vírus ativo', 'https://omunicipio.com.br/wp-content/uploads/2020/11/brusque-registra-67-novos-casos-de-covid-19-27-pacientes-estao-hospitalizados-covid-218x150.jpg', 'https://omunicipio.com.br/brusque-registra-73-novos-casos-da-covid-19-sao-729-pessoas-com-o-virus-ativo/'),
-(18, 'Com acusações por 18 homicídios, um dos homens mais procurados do RS é preso...', 'https://omunicipio.com.br/wp-content/uploads/2020/11/rs-218x150.jpg', 'https://omunicipio.com.br/um-dos-homens-mais-procurados-do-rio-grande-do-sul-e-preso-em-bombinhas/'),
-(19, 'Motociclista de 28 anos fica ferido após colisão com carro no São Pedro', 'https://omunicipio.com.br/wp-content/uploads/2020/11/idoso-fica-ferido-apos-cair-de-telhado-no-bairro-poco-fundo-ambulancia-3-218x150.jpeg', 'https://omunicipio.com.br/motociclista-de-28-anos-fica-ferido-apos-colisao-com-carro-no-sao-pedro/'),
-(20, 'Lei Aldir Blanc: resultado de habilitação do edital é divulgado em Brusque', 'https://omunicipio.com.br/wp-content/uploads/2020/11/lei-aldir-blanc-resultado-de-habilitacao-do-edital-e-divulgado-em-brusque-whatsapp-image-2020-11-23-at-16.02.54-218x150.jpeg', 'https://omunicipio.com.br/lei-aldir-blanc-resultado-de-habilitacao-do-edital-e-divulgado-em-brusque/');
-
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `tbl_noticia`
---
-ALTER TABLE `tbl_noticia`
-  ADD PRIMARY KEY (`id_noticia`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `tbl_noticia`
---
-ALTER TABLE `tbl_noticia`
-  MODIFY `id_noticia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+INSERT INTO `tbl_noticia` (`id_noticia`, `titulo`, `imagem`, `links`, `data_noticia`) VALUES
+(0, 'Rede estadual de ensino de SC divulga datas de matrículas e rematrículas para 2021', 'https://omunicipio.com.br/wp-content/uploads/2020/10/santa-catarina-autoriza-e-estabelece-regras-para-retorno-as-aulas-presenciais-volta-as-aulas-entrega-de-mobiliario-20200131-1872334288-218x150.jpg', 'https://omunicipio.com.br/rede-estadual-de-ensino-de-sc-divulga-datas-de-matriculas-e-rematriculas-para-2021/', '2020-11-26 15:37:59'),
+(0, 'Tradicional presépio natalino no Santa Rita tem data de abertura para visitação', 'https://omunicipio.com.br/wp-content/uploads/2020/11/design-sem-nome-20-218x150.jpg', 'https://omunicipio.com.br/tradicional-presepio-natalino-no-santa-rita-tem-data-de-abertura-para-visitacao/', '2020-11-26 15:37:59'),
+(0, 'Black Friday: confira dicas e orientações para compras seguras', 'https://omunicipio.com.br/wp-content/uploads/2020/11/black-friday-confira-dicas-e-orientacoes-para-compras-seguras-high-view-laptop-and-black-shopping-card-218x150.jpg', 'https://omunicipio.com.br/black-friday-dicas-para-compras-seguras/', '2020-11-26 15:37:59'),
+(0, 'Brusque registra 62ª morte por Covid-19', 'https://omunicipio.com.br/wp-content/uploads/2020/11/coronavirus-freepik-1-218x150.jpg', 'https://omunicipio.com.br/brusque-registra-62a-morte-por-covid-19/', '2020-11-26 15:37:59'),
+(0, 'FG e Havan construirão edifício mais alto da América Latina com 101 andares, em...', 'https://omunicipio.com.br/wp-content/uploads/2020/11/andre-groh-havan-sera-socia-do-projeto-que-sera-o-novo-edificio-mais-alto-da-america-latina-com-101-pavimentos-predio-mais-alto-da-america-latina-havan-fg-218x150.jpg', 'https://omunicipio.com.br/andre-groh-fg-e-havan-construirao-edificio-mais-alto-da-america-latina-com-101-andares-em-balneario-camboriu/', '2020-11-26 15:37:59'),
+(0, 'Covid-19: quais medidas devem ser adotadas com o risco gravíssimo em Brusque', 'https://omunicipio.com.br/wp-content/uploads/2020/11/matriz-de-risco-1-218x150.jpeg', 'https://omunicipio.com.br/covid-19-quais-medidas-devem-ser-adotadas-com-o-risco-gravissimo-em-brusque/', '2020-11-26 15:37:59'),
+(0, 'Brusque registra 213 novos casos da Covid-19; são 772 pessoas com o vírus ativo', 'https://omunicipio.com.br/wp-content/uploads/2020/10/procon-sc-notifica-laboratorios-por-diferenca-200-nos-precos-de-exames-da-covid-19-kits-de-teste-de-coronaviruscovid-19fremont-california-218x150.jpg', 'https://omunicipio.com.br/brusque-registra-213-novos-casos-da-covid-19-sao-772-pessoas-com-o-virus-ativo/', '2020-11-26 15:37:59'),
+(0, 'Covid-19: Guabiruba registra 105 novos casos nesta quarta-feira; são 204 pessoas com o vírus...', 'https://omunicipio.com.br/wp-content/uploads/2020/10/coronavirus-cells-floating-1048-12472-2-218x150.jpg', 'https://omunicipio.com.br/covid-19-guabiruba-registra-105-novos-casos-nesta-quarta-feira-sao-204-pessoas-com-o-virus-ativo/', '2020-11-26 15:37:59'),
+(0, 'Registramos, com pesar, os falecimentos ocorridos de 20 a 25 de novembro no Vale...', 'https://omunicipio.com.br/wp-content/uploads/2020/11/obt-218x150.png', 'https://omunicipio.com.br/registramos-com-pesar-os-falecimentos-ocorridos-de-20-25-de-novembro-no-vale-do-rio-tijucas/', '2020-11-26 15:37:59'),
+(0, 'Covid-19: Paróquia São Luís Gonzaga reduz capacidade de público em 30% nas celebrações', 'https://omunicipio.com.br/wp-content/uploads/2020/11/whatsapp-image-2020-11-25-at-15.48.36-218x150.jpeg', 'https://omunicipio.com.br/covid-19-paroquia-sao-luis-gonzaga-reduz-capacidade-de-publico-em-30-nas-celebracoes/', '2020-11-26 15:37:59');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
